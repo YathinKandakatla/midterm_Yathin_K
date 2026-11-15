@@ -36,7 +36,7 @@ def plot_2d_decision_surface_and_features(
 ):
     """Plots the decision surface of an algorithm in 2D feature space."""
     x: NDArray[np.float64] = np.linspace(x_range[0], x_range[1], n_grid_points)
-    y: NDArray[np.float64] = np.linspace(x_range[0], x_range[1], n_grid_points)
+    y: NDArray[np.float64] = np.linspace(y_range[0], y_range[1], n_grid_points)
     xx, yy = np.meshgrid(x, y)
 
     xy: NDArray[np.float64] = np.column_stack((xx.ravel(), yy.ravel()))
